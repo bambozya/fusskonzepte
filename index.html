@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fusskonzepte in Bad Segeberg: Orthopaedische Schuhtechnik, individuelle Einlagen, Schuhzurichtungen und Reparaturen.">
+    <title>fusskonzepte | Orthopaedie-Schuhtechnik</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --brand: #85bf42;
+            --brand-dark: #47731d;
+            --ink: #1d2518;
+            --surface: #f5f8f1;
+            --link: #245f91;
+            --content-width: 960px;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.6;
+            color: var(--ink);
+            background: var(--surface);
+        }
+
+        header {
+            background: var(--brand);
+            color: #102007;
+            padding: 32px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .header-logo {
+            display: block;
+            max-width: min(100%, 430px);
+            width: auto;
+            height: auto;
+        }
+
+        .container {
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: 24px 20px;
+        }
+
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(1.7rem, 4vw, 2.5rem);
+        }
+
+        h2 {
+            font-size: 1.45rem;
+        }
+
+        h3 {
+            color: var(--brand-dark);
+            font-size: 1.15rem;
+            margin-bottom: 14px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 24px;
+            background: #fff;
+            border-top: 4px solid var(--brand);
+        }
+
+        ul {
+            padding-left: 22px;
+        }
+
+        li {
+            margin: 12px 0;
+        }
+
+        li p {
+            margin-top: 4px;
+        }
+
+        .contact-info {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+        }
+
+        a:hover, a:focus-visible {
+            color: var(--brand-dark);
+        }
+
+        a:focus-visible {
+            outline: 3px solid #e6a817;
+            outline-offset: 3px;
+        }
+
+        footer {
+            background: var(--brand);
+            padding: 24px 0;
+            margin-top: 20px;
+        }
+
+        footer .container {
+            padding-top: 0;
+            padding-bottom: 12px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        @media (max-width: 700px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="fusskonzepte.png" alt="Fusskonzepte Logo" class="header-logo">
+        <h1>fusskonzepte GmbH</h1>
+        <p>#passgenau</p>
+        <p>Orthopaedie-Schuhtechnik</p>
+    </header>
+
+    <main class="container">
+
+        <div class="grid">
+            <!-- Opening Times -->
+            <section class="section">
+                <h2>Oeffnungszeiten</h2>
+                <ul>
+                    <li>Montag: 9 - 13 Uhr &amp; 15 - 17 Uhr</li>
+                    <li>Dienstag: 9 - 13 Uhr &amp; 15 - 17 Uhr</li>
+                    <li>Mittwoch: 9 - 13 Uhr</li>
+                    <li>Donnerstag: 9 - 13 Uhr &amp; 15 - 17 Uhr</li>
+                    <li>Freitag: Geschlossen</li>
+                </ul>
+                <p>Termine nach Vereinbarung</p>
+            </section>
+
+            <!-- Telephone -->
+            <section class="section">
+                <h2>Kontakt</h2>
+                <p class="contact-info">
+                    <strong>Thorge Siegfried</strong><br>
+                    <strong>Telefon:</strong> <a href="tel:045519695308">04551 - 96 95 308</a><br>
+                    <strong>E-Mail:</strong> <a href="mailto:fusskonzepte@t-online.de">fusskonzepte@t-online.de</a>
+                </p>
+                <!-- Address -->
+                <h2>Adresse</h2>
+                <p class="contact-info">
+                    fusskonzepte GmbH<br>
+                    Eutiner Straße 17a<br>
+                    23795 Bad Segeberg, Schleswig Holstein
+                </p>
+            </section>
+        </div>
+
+        <!-- Services -->
+        <section class="section" aria-labelledby="leistungen">
+            <h2 id="leistungen">Unsere Leistungen</h2>
+            <ul>
+                <li><strong>Orthopaedische Massschuhe</strong>
+                    <p>Individuelle Anfertigung von orthopaedischen Massschuhen und Massschuhen nach individuellem Abdruck.
+                    </p>
+                </li>
+                <li><strong>Orthopaedische Masseinlagen im 3D-Druckverfahren</strong>
+                    <p>Nach digitalem Fussscan und umfangreicher Anamnese fertige ich individuelle Masseinlagen an. Diese Masseinlagen sind recyclebar und koennen dem Wertstoffkreislauf wieder zugefuehrt werden.</p>
+                </li>
+                <li><strong>Sensomotorische Masseinlagen</strong>
+                    <p>Nach einer umfangreichen Anamnese fertige ich sensomotorische (propriozeptive) Masseinlagen zur gezielten Behandlung unterschiedlichster statischer Probleme an.</p>
+                </li>
+                <li><strong>Einlage in Sonderanfertigung nach Gipsabdruck</strong><br>
+                    <p>Diese Einlagen werden nach einem individuellen Gipsabdruck hergestellt, zur gezielten Behandlung
+                        schwerer Fußfehlstellungen.</p>
+                </li>
+                <li><strong>Diabetikerversorgungen</strong>
+                    <p>Orthopaedische Massschuhe, Diabetiker-Schutzschuhe und diabetesadaptierte Fussbettungen nach
+                        individuellem Fussabdruck, Innendruckmessung von Schuhen sowie diabetesadaptierte
+                        Arbeitssicherheitsschuhe.</p>
+                </li>
+                <li><strong>Schuhzurichtungen</strong><br>
+                    <p>Schuherhöhung, Abrollsohlen, Schuhinnen- oder Außenranderhöhung, Schmetterlingsrollen,
+                        Schuhbodenversteifung.</p>
+                </li>
+                <li><strong>Reparaturen</strong><br>
+                    <p>Absatz und Sohlenreparaturen, Reißverschlüsse, Näharbeiten, Lederreparaturen.</p>
+                </li>
+                <li><strong>... und vieles mehr</strong>
+                    <p>Kommen Sie vorbei, fragen Sie nach und lassen Sie sich beraten. Es gibt mehr Möglichkeiten als
+                        Sie sich vorstellen können.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Social Media &amp; Google Maps -->
+        <!-- <section class="section">
+            <h3>Folgen Sie uns &amp; Besuchen</h3>
+            <div class="social-media">
+                <p><strong>Soziale Medien:</strong></p>
+                <a href="https://www.facebook.com/fusskonzepte" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/fusskonzepte" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com/fusskonzepte" target="_blank">Twitter</a>
+            </div>
+            <p style="margin-top: 20px;">
+                <strong>Standort:</strong> <a href="https://www.google.com/maps/search/fusskonzepte+podiatry" target="_blank">In Google Maps anzeigen</a>
+            </p>
+        </section> -->
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <section>
+                <h3>Impressum</h3>
+                <p class="contact-info">
+                    fusskonzepte GmbH<br>
+                    Eutiner Straße 17a<br>
+                    23795 Bad Segeberg<br>
+                    Deutschland
+                </p>
+                <p class="contact-info">
+                    Geschäftsführer: Thorge Siegfried<br>
+                    Telefon: <a href="tel:045519695308">04551 - 96 95 308</a><br>
+                    E-Mail: <a href="mailto:fusskonzepte@t-online.de">fusskonzepte@t-online.de</a><br>
+                    USt-IdNr.: DE455508876<br>
+                    Handelsregister: HRB 28297 KI, Amtsgericht Kiel<br>
+                    Handwerkskammer Lübeck Betriebsnummer: 2121226297
+                </p>
+            </section>
+        </div>
+        <p class="text-center">&copy; 2026 fusskonzepte. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+
+</html>
