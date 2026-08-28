@@ -6,158 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Fusskonzepte in Bad Segeberg: Orthopaedische Schuhtechnik, individuelle Einlagen, Schuhzurichtungen und Reparaturen.">
     <title>fusskonzepte | Orthopaedie-Schuhtechnik</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --brand: #85bf42;
-            --brand-dark: #47731d;
-            --ink: #1d2518;
-            --surface: #f5f8f1;
-            --link: #245f91;
-            --content-width: 960px;
-        }
-
-        body {
-            font-family: Georgia, 'Times New Roman', serif;
-            line-height: 1.6;
-            color: var(--ink);
-            background: var(--surface);
-        }
-
-        header {
-            background: var(--brand);
-            color: #102007;
-            padding: 32px 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .header-logo {
-            display: block;
-            max-width: min(100%, 430px);
-            width: auto;
-            height: auto;
-        }
-
-        .container {
-            max-width: var(--content-width);
-            margin: 0 auto;
-            padding: 24px 20px;
-        }
-
-        h1, h2, h3 {
-            line-height: 1.2;
-        }
-
-        h1 {
-            font-size: clamp(1.7rem, 4vw, 2.5rem);
-        }
-
-        h2 {
-            font-size: 1.45rem;
-        }
-
-        h3 {
-            color: var(--brand-dark);
-            font-size: 1.15rem;
-            margin-bottom: 14px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
-            gap: 20px;
-        }
-
-        .section {
-            margin: 20px 0;
-            padding: 24px;
-            background: #fff;
-            border-top: 4px solid var(--brand);
-        }
-
-        ul {
-            padding-left: 22px;
-        }
-
-        li {
-            margin: 12px 0;
-        }
-
-        li p {
-            margin-top: 4px;
-        }
-
-        .contact-info {
-            font-size: 1rem;
-            margin: 10px 0;
-        }
-
-        a {
-            color: var(--link);
-            text-decoration-thickness: 1px;
-            text-underline-offset: 3px;
-        }
-
-        a:hover, a:focus-visible {
-            color: var(--brand-dark);
-        }
-
-        a:focus-visible {
-            outline: 3px solid #e6a817;
-            outline-offset: 3px;
-        }
-
-        footer {
-            background: var(--brand);
-            padding: 24px 0;
-            margin-top: 20px;
-        }
-
-        footer .container {
-            padding-top: 0;
-            padding-bottom: 12px;
-        }
-
-        .text-center {
-            text-align: center;
-        }
-
-        @media (max-width: 700px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section {
-                padding: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <img src="fusskonzepte.png" alt="Fusskonzepte Logo" class="header-logo">
-        <h1>fusskonzepte GmbH</h1>
-        <p>#passgenau</p>
-        <p>Orthopaedie-Schuhtechnik</p>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="header-top">
+                <img src="fusskonzepte.png" alt="Fusskonzepte Logo" class="header-logo">
+                <nav aria-label="Hauptnavigation">
+                    <a href="#oeffnungszeiten">Oeffnungszeiten</a>
+                    <a href="#kontakt">Kontakt</a>
+                    <a href="#leistungen">Unsere Leistungen</a>
+                </nav>
+            </div>
+            <div class="header-copy">
+                <h1>fusskonzepte GmbH</h1>
+                <p class="tagline">#passgenau</p>
+                <p>Orthopaedie-Schuhtechnik</p>
+            </div>
+        </div>
     </header>
 
-    <main class="container">
+    <main class="container" id="main-content">
 
-        <div class="grid">
+        <div class="intro-grid">
             <!-- Opening Times -->
-            <section class="section">
+            <section class="panel" id="oeffnungszeiten">
                 <h2>Oeffnungszeiten</h2>
-                <ul>
+                <ul class="hours">
                     <li>Montag: 9 - 13 Uhr &amp; 15 - 17 Uhr</li>
                     <li>Dienstag: 9 - 13 Uhr &amp; 15 - 17 Uhr</li>
                     <li>Mittwoch: 9 - 13 Uhr</li>
@@ -168,7 +47,7 @@
             </section>
 
             <!-- Telephone -->
-            <section class="section">
+            <section class="panel" id="kontakt">
                 <h2>Kontakt</h2>
                 <p class="contact-info">
                     <strong>Thorge Siegfried</strong><br>
@@ -185,10 +64,15 @@
             </section>
         </div>
 
+        <figure class="location panel" aria-labelledby="standort">
+            <img class="location-photo" src="location.jpg" alt="fusskonzepte GmbH in der Eutiner Straße 17a in Bad Segeberg">
+            <figcaption id="standort" class="visually-hidden">fusskonzepte GmbH in der Eutiner Straße 17a in Bad Segeberg</figcaption>
+        </figure>
+
         <!-- Services -->
-        <section class="section" aria-labelledby="leistungen">
+        <section class="services" aria-labelledby="leistungen">
             <h2 id="leistungen">Unsere Leistungen</h2>
-            <ul>
+            <ul class="service-list">
                 <li><strong>Orthopaedische Massschuhe</strong>
                     <p>Individuelle Anfertigung von orthopaedischen Massschuhen und Massschuhen nach individuellem Abdruck.
                     </p>
@@ -199,7 +83,7 @@
                 <li><strong>Sensomotorische Masseinlagen</strong>
                     <p>Nach einer umfangreichen Anamnese fertige ich sensomotorische (propriozeptive) Masseinlagen zur gezielten Behandlung unterschiedlichster statischer Probleme an.</p>
                 </li>
-                <li><strong>Einlage in Sonderanfertigung nach Gipsabdruck</strong><br>
+                <li><strong>Einlage in Sonderanfertigung nach Gipsabdruck</strong>
                     <p>Diese Einlagen werden nach einem individuellen Gipsabdruck hergestellt, zur gezielten Behandlung
                         schwerer Fußfehlstellungen.</p>
                 </li>
@@ -208,11 +92,11 @@
                         individuellem Fussabdruck, Innendruckmessung von Schuhen sowie diabetesadaptierte
                         Arbeitssicherheitsschuhe.</p>
                 </li>
-                <li><strong>Schuhzurichtungen</strong><br>
+                <li><strong>Schuhzurichtungen</strong>
                     <p>Schuherhöhung, Abrollsohlen, Schuhinnen- oder Außenranderhöhung, Schmetterlingsrollen,
                         Schuhbodenversteifung.</p>
                 </li>
-                <li><strong>Reparaturen</strong><br>
+                <li><strong>Reparaturen</strong>
                     <p>Absatz und Sohlenreparaturen, Reißverschlüsse, Näharbeiten, Lederreparaturen.</p>
                 </li>
                 <li><strong>... und vieles mehr</strong>
@@ -222,26 +106,12 @@
             </ul>
         </section>
 
-        <!-- Social Media &amp; Google Maps -->
-        <!-- <section class="section">
-            <h3>Folgen Sie uns &amp; Besuchen</h3>
-            <div class="social-media">
-                <p><strong>Soziale Medien:</strong></p>
-                <a href="https://www.facebook.com/fusskonzepte" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/fusskonzepte" target="_blank">Instagram</a>
-                <a href="https://www.twitter.com/fusskonzepte" target="_blank">Twitter</a>
-            </div>
-            <p style="margin-top: 20px;">
-                <strong>Standort:</strong> <a href="https://www.google.com/maps/search/fusskonzepte+podiatry" target="_blank">In Google Maps anzeigen</a>
-            </p>
-        </section> -->
-
     </main>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
-            <section>
-                <h3>Impressum</h3>
+            <section id="impressum">
+            <h2>Impressum</h2>
                 <p class="contact-info">
                     fusskonzepte GmbH<br>
                     Eutiner Straße 17a<br>
@@ -258,7 +128,7 @@
                 </p>
             </section>
         </div>
-        <p class="text-center">&copy; 2026 fusskonzepte. Alle Rechte vorbehalten.</p>
+        <p class="copyright">&copy; 2026 fusskonzepte. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 
